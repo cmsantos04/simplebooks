@@ -4,6 +4,16 @@ controllers:
         namespace: App\Controller
     type: attribute
 
+kernel:
+    resource: App\Kernel
+    type: attribute
+    
+# Homepage route
 homepage:
     path: /
     controller: App\Controller\HomeController::index
+
+# Role management route
+role_management:
+    path: /role-management
+    controller: App\Controller\RoleManagementController::index

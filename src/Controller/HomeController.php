@@ -14,10 +14,11 @@ class HomeController extends AbstractController
      */
     public function index(): Response
     {
-        return $this->render('index.html.twig', [
+        return $this->render('base.html.twig', [
             'page_title' => 'Simplebooks',
             'app_name' => 'My Symfony App',
             'message' => 'Welcome to our website!',
         ]);
     }
+
 }
